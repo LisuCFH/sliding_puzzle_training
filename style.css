@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+.tile {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #1b1b1b;
+  height: 100vh;
+}
+
+#game-board {
+  height: 300px;
+  position: relative;
+  width: 300px;
+}
+
+.tile {
+  color: transparent;
+  border: 1px solid white;
+  font-size: 30px;
+  height: 100px;
+  position: absolute;
+  transition: top 0.2s linear, left 0.2s linear;
+  width: 100px;
+  background: url(image.png);
+}
+
+
+.tile:last-of-type {
+    background: none;
+    border: none;
+}
